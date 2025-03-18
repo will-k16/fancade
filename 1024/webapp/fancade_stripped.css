@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("/webapp/baloo2.woff") format('woff');
+  src: url("baloo2.woff") format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -77,9 +77,11 @@
 
 .title {
   font-size: 14px;
+  font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
 }
 
 .author {
+  font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
   border-spacing: 0;
   font-size: 14px;
   color: #ccc;
@@ -101,6 +103,7 @@
 }
 
 .description {
+  font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
   display: inline-block;
   font-size: 16px;
   line-height: 1.2em;
@@ -129,43 +132,9 @@
   margin: 11px;
 }
 
-#copy_button {
-  height: 28px;
-  line-height: 28px;
-  width: 55px;
-  text-align: center;
-  border: 2px solid #000;
-  color: #333;
-  background-color: #eee;
-  font-size: 0.7em;
-  margin: 11px;
-}
-
 #play_button {
   color: #333;
   background-color: #eee;
-}
-#stretch_button {
-  z-index: 11;
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
-#stretch_button:link {
-  transition: 0.2s;
-}
-#stretch_button:hover, #stretch_button:active {
-  cursor: pointer;
-  opacity: 0.5;
-}
-.stretched {
-  color: rgb(20, 20, 20);
-  font-size: 0.8em;
-  font-family: sans-serif;
-}
-.unstretched {
-  color: #00B9FE;
-  font-size: 0.8em;
-  font-family: sans-serif;
 }
 
 .emscripten_border {
@@ -198,16 +167,6 @@ img {
   vertical-align: top;
 }
 
-body {
-  font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
-  color: #bbb;
-  line-height: 1.8;
-}
-
-.store_modal_text {
-  font-size: 1em;
-  line-height: 1.2;
-}
 
 html, body {
   font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
@@ -218,6 +177,7 @@ html, body {
   height: 100%;
   margin: 0px;
   border: 0;
+  line-height: 1.8;
   overflow: hidden; /*  Disable scrollbars */
   display: block;  /* No floating content on sides */
 }
